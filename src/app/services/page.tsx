@@ -4,12 +4,13 @@ import { ServiceDetailsSection } from "@/components/services/ServiceDetailSectio
 import { ServicesCtaSection } from "@/components/services/ServicesCtaSection";
 import { ServicesHeroSection } from "@/components/services/ServicesHeroSection";
 import { ServicesOverviewSection } from "@/components/services/ServicesOverviewSection";
-import { siteConfig } from "@/lib/constants";
+import { createPageMetadata } from "@/lib/metadata";
+import { siteMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Services",
-  description: `${siteConfig.name} delivers specialist advisory and outsourcing services across claims, recoveries, operational excellence, contact centres, and procurement.`,
-};
+export const metadata: Metadata = createPageMetadata({
+  ...siteMetadata.services,
+  path: "/services",
+});
 
 export default function ServicesPage() {
   return (

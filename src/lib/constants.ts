@@ -1,6 +1,7 @@
 export const siteConfig = {
   name: "Modise Advisory Group",
   tagline: "Transforming Operations. Recovering Value. Delivering Results.",
+  url: "https://www.modiseadvisory.co.za",
   services: [
     "Insurance Advisory",
     "Recoveries",
@@ -14,8 +15,11 @@ export const siteConfig = {
   whatsappHref: "https://wa.me/27849997309",
   email: "info@modiseadvisory.co.za",
   emailHref: "mailto:info@modiseadvisory.co.za",
+  directEmail: "thabo@modiseadvisory.co.za",
+  directEmailHref: "mailto:thabo@modiseadvisory.co.za",
   website: "www.modiseadvisory.co.za",
   websiteHref: "https://www.modiseadvisory.co.za",
+  linkedIn: "Coming soon",
 } as const;
 
 export const navLinks = [

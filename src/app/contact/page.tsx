@@ -4,12 +4,13 @@ import { ConsultationCtaSection } from "@/components/contact/ConsultationCtaSect
 import { ContactFormSection } from "@/components/contact/ContactFormSection";
 import { ContactHeroSection } from "@/components/contact/ContactHeroSection";
 import { ContactOptionsSection } from "@/components/contact/ContactOptionsSection";
-import { siteConfig } from "@/lib/constants";
+import { createPageMetadata } from "@/lib/metadata";
+import { siteMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description: `Contact ${siteConfig.name} for advisory, recoveries, operational excellence, and outsourcing support. Phone: ${siteConfig.phone}. Email: ${siteConfig.email}.`,
-};
+export const metadata: Metadata = createPageMetadata({
+  ...siteMetadata.contact,
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

@@ -47,7 +47,7 @@ export function Navbar() {
         <Link
           href="/"
           aria-label="Modise Advisory Group home"
-          className="flex shrink-0 items-center gap-2.5 sm:gap-3"
+          className="flex shrink-0 items-center gap-2 sm:gap-3"
         >
           <Image
             src="/assets/logos/logo-icon.svg"

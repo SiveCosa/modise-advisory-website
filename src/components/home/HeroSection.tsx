@@ -1,6 +1,9 @@
-import { Button } from "@/components/ui/Button";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { heroContent } from "@/lib/home-content";
+
+const heroCtaLinkClass =
+  "group inline-flex items-center gap-2 rounded-sm text-base font-medium text-[#c9a84c] underline-offset-4 transition-all duration-200 hover:text-white hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9a84c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#1b2e4b] sm:text-lg";
 
 export function HeroSection() {
   return (
@@ -25,18 +28,32 @@ export function HeroSection() {
           <p className="mx-auto mt-5 max-w-3xl text-base leading-relaxed text-slate-grey-light sm:mt-6 sm:text-lg">
             {heroContent.subheading}
           </p>
-          <div className="mt-8 flex flex-col items-stretch justify-center gap-4 sm:mt-10 sm:flex-row sm:items-center">
-            <Button href="/contact" size="lg" className="w-full sm:w-auto">
+          <div
+            className="mt-8 flex flex-col items-center justify-center gap-5 sm:mt-10 sm:flex-row sm:gap-0"
+            aria-label="Hero calls to action"
+          >
+            <Link href="/contact" className={heroCtaLinkClass}>
               Book a Consultation
-            </Button>
-            <Button
-              href="/contact"
-              variant="outline"
-              size="lg"
-              className="w-full border-pure-white/30 text-pure-white hover:bg-pure-white/10 sm:w-auto"
-            >
+              <span
+                className="transition-transform duration-200 group-hover:translate-x-0.5"
+                aria-hidden="true"
+              >
+                →
+              </span>
+            </Link>
+            <span
+              className="hidden h-1 w-1 shrink-0 rounded-full bg-[#c9a84c]/60 sm:mx-8 sm:inline"
+              aria-hidden="true"
+            />
+            <Link href="/contact" className={heroCtaLinkClass}>
               Request a Proposal
-            </Button>
+              <span
+                className="transition-transform duration-200 group-hover:translate-x-0.5"
+                aria-hidden="true"
+              >
+                →
+              </span>
+            </Link>
           </div>
         </div>
       </Container>

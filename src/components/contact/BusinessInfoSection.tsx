@@ -90,7 +90,7 @@ export function BusinessInfoSection() {
                 <dt className="text-xs font-semibold uppercase tracking-wider text-rich-gold">
                   LinkedIn
                 </dt>
-                <dd className="mt-1 text-base text-slate-grey">{contactDetails.linkedIn}</dd>
+                <dd className="mt-1 text-base text-slate-grey">{siteConfig.linkedIn}</dd>
               </div>
             </dl>
 

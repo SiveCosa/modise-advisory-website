@@ -5,12 +5,13 @@ import { IndustriesCtaSection } from "@/components/industries/IndustriesCtaSecti
 import { IndustriesHeroSection } from "@/components/industries/IndustriesHeroSection";
 import { IndustriesOverviewSection } from "@/components/industries/IndustriesOverviewSection";
 import { SectorChallengesSection } from "@/components/industries/SectorChallengesSection";
-import { siteConfig } from "@/lib/constants";
+import { createPageMetadata } from "@/lib/metadata";
+import { siteMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Industries",
-  description: `${siteConfig.name} provides operational advisory and outsourcing support across insurance, financial services, banking, government, and other complex industries.`,
-};
+export const metadata: Metadata = createPageMetadata({
+  ...siteMetadata.industries,
+  path: "/industries",
+});
 
 export default function IndustriesPage() {
   return (

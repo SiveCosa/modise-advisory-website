@@ -18,31 +18,31 @@ export const serviceCards = [
     title: "Insurance & Claims Advisory",
     description:
       "Strategic guidance to optimise claims operations, reduce leakage, and strengthen insurer performance across the value chain.",
-    href: "/services",
+    href: "/services#insurance-claims-advisory",
   },
   {
     title: "Recoveries & Liability Management",
     description:
       "End-to-end recoveries strategies and liability management solutions designed to maximise returns and improve outcomes.",
-    href: "/services",
+    href: "/services#recoveries-liability-management",
   },
   {
     title: "Operational Excellence",
     description:
       "Practical frameworks and hands-on support to improve efficiency, profitability, and service delivery across your operations.",
-    href: "/services",
+    href: "/services#operational-excellence",
   },
   {
     title: "Contact Centre & BPO Solutions",
     description:
       "Scalable contact centre and business process outsourcing solutions built for quality, consistency, and long-term performance.",
-    href: "/services",
+    href: "/services#contact-centre-bpo",
   },
   {
     title: "Procurement & Vendor Management",
     description:
       "Structured procurement and vendor management support to optimise spend, strengthen supplier relationships, and drive savings.",
-    href: "/services",
+    href: "/services#procurement-vendor-management",
   },
 ] as const;
 

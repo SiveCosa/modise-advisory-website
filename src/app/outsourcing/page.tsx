@@ -6,12 +6,13 @@ import { OutsourcingHeroSection } from "@/components/outsourcing/OutsourcingHero
 import { OutsourcingServicesSection } from "@/components/outsourcing/OutsourcingServicesSection";
 import { WhyPartnerSection } from "@/components/outsourcing/WhyPartnerSection";
 import { WhySouthAfricaSection } from "@/components/outsourcing/WhySouthAfricaSection";
-import { siteConfig } from "@/lib/constants";
+import { createPageMetadata } from "@/lib/metadata";
+import { siteMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Outsourcing",
-  description: `${siteConfig.name} helps overseas businesses access skilled South African talent for customer service, sales, claims, and back-office outsourcing operations.`,
-};
+export const metadata: Metadata = createPageMetadata({
+  ...siteMetadata.outsourcing,
+  path: "/outsourcing",
+});
 
 export default function OutsourcingPage() {
   return (

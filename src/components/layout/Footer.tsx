@@ -65,6 +65,17 @@ export function Footer() {
               </li>
               <li>
                 <span className="mb-1 block text-xs uppercase tracking-wide text-slate-grey-light">
+                  Direct
+                </span>
+                <a
+                  href={siteConfig.directEmailHref}
+                  className="break-all text-pure-white transition-colors hover:text-rich-gold"
+                >
+                  {siteConfig.directEmail}
+                </a>
+              </li>
+              <li>
+                <span className="mb-1 block text-xs uppercase tracking-wide text-slate-grey-light">
                   Website
                 </span>
                 <a

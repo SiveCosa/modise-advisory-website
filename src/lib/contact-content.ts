@@ -12,13 +12,13 @@ export const contactDetails = {
   phoneHref: siteConfig.phoneHref,
   email: siteConfig.email,
   emailHref: siteConfig.emailHref,
-  directEmail: "thabo@modiseadvisory.co.za",
-  directEmailHref: "mailto:thabo@modiseadvisory.co.za",
+  directEmail: siteConfig.directEmail,
+  directEmailHref: siteConfig.directEmailHref,
   whatsapp: siteConfig.phone,
   whatsappHref: siteConfig.whatsappHref,
   website: siteConfig.website,
   websiteHref: siteConfig.websiteHref,
-  linkedIn: "Coming soon",
+  linkedIn: siteConfig.linkedIn,
 } as const;
 
 export const contactOptionsHeading = "Start the Conversation";

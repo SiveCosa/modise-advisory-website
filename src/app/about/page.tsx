@@ -5,12 +5,13 @@ import { HowWeWorkSection } from "@/components/about/HowWeWorkSection";
 import { MissionVisionSection } from "@/components/about/MissionVisionSection";
 import { OurStorySection } from "@/components/about/OurStorySection";
 import { ValuesSection } from "@/components/about/ValuesSection";
-import { siteConfig } from "@/lib/constants";
+import { createPageMetadata } from "@/lib/metadata";
+import { siteMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "About",
-  description: `${siteConfig.name} provides practical business solutions backed by more than 20 years of executive experience in insurance, operations, and strategic leadership.`,
-};
+export const metadata: Metadata = createPageMetadata({
+  ...siteMetadata.about,
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (

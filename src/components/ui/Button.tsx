@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
 
-type ButtonVariant = "primary" | "secondary" | "outline";
+type ButtonVariant = "primary" | "secondary" | "outline" | "outlineOnDark";
 type ButtonSize = "sm" | "md" | "lg";
 
 const variantStyles: Record<ButtonVariant, string> = {
@@ -11,6 +11,8 @@ const variantStyles: Record<ButtonVariant, string> = {
     "bg-midnight-navy text-pure-white hover:bg-midnight-navy-light border border-midnight-navy",
   outline:
     "bg-transparent text-midnight-navy hover:bg-midnight-navy/5 border border-midnight-navy/20",
+  outlineOnDark:
+    "bg-midnight-navy/20 text-pure-white hover:bg-midnight-navy-light/40 border border-pure-white/40 hover:border-pure-white/60",
 };
 
 const sizeStyles: Record<ButtonSize, string> = {
@@ -32,6 +34,7 @@ type SharedProps = {
 type ButtonAsButton = SharedProps &
   ButtonHTMLAttributes<HTMLButtonElement> & {
     href?: undefined;
+    type?: "button" | "submit" | "reset";
   };
 
 type ButtonAsLink = SharedProps &
@@ -41,13 +44,13 @@ type ButtonAsLink = SharedProps &
 
 type ButtonProps = ButtonAsButton | ButtonAsLink;
 
-export function Button({
-  children,
-  variant = "primary",
-  size = "md",
-  className = "",
-  ...props
-}: ButtonProps) {
+export function Button(props: ButtonProps) {
+  const {
+    children,
+    variant = "primary",
+    size = "md",
+    className = "",
+  } = props;
   const classes = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
 
   if ("href" in props && props.href) {
@@ -69,10 +72,17 @@ export function Button({
     );
   }
 
-  const { ...buttonProps } = props as ButtonAsButton;
+  const {
+    type = "button",
+    variant: _variant,
+    size: _size,
+    className: _className,
+    children: _children,
+    ...buttonProps
+  } = props as ButtonAsButton;
 
   return (
-    <button type="button" className={classes} {...buttonProps}>
+    <button type={type} className={classes} {...buttonProps}>
       {children}
     </button>
   );

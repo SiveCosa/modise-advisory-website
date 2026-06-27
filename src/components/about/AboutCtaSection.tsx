@@ -25,14 +25,18 @@ export function AboutCtaSection() {
         />
 
         <div className="mt-10 flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-center">
-          <Button href="/contact" size="lg" className="w-full sm:w-auto">
+          <Button
+            href="/contact"
+            size="lg"
+            className="w-full focus-visible:ring-offset-midnight-navy sm:w-auto"
+          >
             Contact Us
           </Button>
           <Button
             href="/services"
-            variant="outline"
+            variant="outlineOnDark"
             size="lg"
-            className="w-full border-pure-white/30 text-pure-white hover:bg-pure-white/10 sm:w-auto"
+            className="w-full focus-visible:ring-offset-midnight-navy sm:w-auto"
           >
             Explore Services
           </Button>
