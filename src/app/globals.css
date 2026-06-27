@@ -9,6 +9,26 @@
   --color-midnight-navy-light: #2a4066;
   --color-rich-gold-dark: #b0923f;
   --color-slate-grey-light: #94a3b8;
+
+  --navbar-height: 4.25rem;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --navbar-height: 4.75rem;
+  }
+}
+
+html {
+  scroll-padding-top: calc(var(--navbar-height) + 0.5rem);
+}
+
+section {
+  scroll-margin-top: calc(var(--navbar-height) + 0.75rem);
+}
+
+section [id] {
+  scroll-margin-top: calc(var(--navbar-height) + 0.75rem);
 }
 
 @theme inline {

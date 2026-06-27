@@ -42,17 +42,26 @@ export function Navbar() {
   }, [mobileOpen]);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-midnight-navy/10 bg-pure-white/95 backdrop-blur-sm">
-      <Container as="div" className="flex h-16 items-center justify-between sm:h-20">
-        <Link href="/" className="relative flex shrink-0 items-center">
+    <header className="sticky top-0 z-50 border-b border-midnight-navy/10 bg-pure-white/95 backdrop-blur-sm supports-[backdrop-filter]:bg-pure-white/90">
+      <Container as="div" className="flex h-[var(--navbar-height)] items-center justify-between">
+        <Link
+          href="/"
+          aria-label="Modise Advisory Group home"
+          className="flex shrink-0 items-center gap-2.5 sm:gap-3"
+        >
           <Image
-            src="/assets/logos/logo-horizontal.svg"
-            alt="Modise Advisory Group"
-            width={180}
-            height={45}
+            src="/assets/logos/logo-icon.svg"
+            alt=""
+            width={44}
+            height={44}
             priority
-            className="h-8 w-auto sm:h-10"
+            aria-hidden="true"
+            className="h-9 w-auto shrink-0 sm:h-10 lg:h-11"
           />
+          <span className="font-heading text-sm font-semibold leading-snug text-midnight-navy sm:text-base lg:text-lg">
+            <span className="sm:hidden">Modise Advisory</span>
+            <span className="hidden sm:inline">Modise Advisory Group</span>
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
