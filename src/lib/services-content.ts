@@ -1,39 +1,33 @@
 export const servicesHeroContent = {
   eyebrow: "Our Services",
-  headline: "Specialist Advisory & Outsourcing Services Built for Measurable Results.",
+  headline: "BPO, Insurance Brokerage & Operational Advisory Solutions.",
   subheading:
-    "Modise Advisory Group helps organisations optimise claims operations, improve recoveries, strengthen governance, reduce leakage, and build scalable service operations.",
+    "Modise Advisory Group supports businesses with scalable BPO services, insurance brokerage solutions, claims advisory, recoveries support, and operational improvement across complex service environments.",
 } as const;
 
 export const servicesOverviewContent = {
   heading: "Practical Solutions Across the Operational Value Chain",
-  body: "Our services are designed to help organisations identify operational gaps, improve performance, recover value, and implement scalable business processes.",
+  body: "Our services are designed to help organisations scale customer operations, access broker-related insurance solutions, strengthen claims and recoveries support, and improve operational performance.",
 } as const;
 
 export const serviceOverviewCards = [
   {
-    id: "insurance-claims-advisory",
-    title: "Insurance & Claims Advisory",
+    id: "contact-centre-bpo-solutions",
+    title: "Contact Centre & BPO Solutions",
     description:
-      "Strategic guidance to optimise claims performance, reduce leakage, strengthen governance, and improve customer outcomes across the insurance value chain.",
+      "Building and supporting scalable customer service, sales, claims administration, and back-office operations.",
   },
   {
-    id: "recoveries-liability-management",
-    title: "Recoveries & Liability Management",
+    id: "insurance-brokerage-claims-advisory",
+    title: "Insurance Brokerage & Claims Advisory",
     description:
-      "Structured recoveries and liability management solutions designed to maximise returns, improve investigation outcomes, and strengthen recovery processes.",
+      "Insurance brokerage solutions alongside claims advisory, recoveries support, and liability management guidance for individuals and organisations.",
   },
   {
     id: "operational-excellence",
     title: "Operational Excellence",
     description:
       "Practical frameworks and hands-on support to improve efficiency, reduce costs, and embed sustainable performance improvement across your operations.",
-  },
-  {
-    id: "contact-centre-bpo",
-    title: "Contact Centre & BPO Solutions",
-    description:
-      "Scalable contact centre and business process outsourcing solutions built for quality, consistency, and long-term operational performance.",
   },
   {
     id: "procurement-vendor-management",
@@ -43,33 +37,70 @@ export const serviceOverviewCards = [
   },
 ] as const;
 
-export const detailedServices = [
+type ServiceGroup = {
+  heading: string;
+  items: readonly string[];
+};
+
+type DetailedService = {
+  id: string;
+  title: string;
+  description: string;
+  includes?: readonly string[];
+  groups?: readonly ServiceGroup[];
+};
+
+export const detailedServices: readonly DetailedService[] = [
   {
-    id: "insurance-claims-advisory",
-    title: "Insurance & Claims Advisory",
+    id: "contact-centre-bpo-solutions",
+    title: "Contact Centre & BPO Solutions",
     description:
-      "Helping insurers optimise claims performance, reduce leakage, strengthen governance, and improve customer outcomes.",
+      "Building and supporting scalable customer service, sales, claims administration, and back-office operations.",
     includes: [
-      "Claims audits",
-      "Claims process redesign",
-      "Fraud management",
-      "Claims governance",
-      "Salvage optimisation",
-      "Claims outsourcing",
+      "Contact centre setup",
+      "Outsourced customer service",
+      "Lead generation teams",
+      "Appointment setting",
+      "Workforce planning",
+      "Quality assurance frameworks",
+      "Training and coaching",
+      "Back-office processing",
+      "Data capturing",
+      "Policy administration support",
     ],
   },
   {
-    id: "recoveries-liability-management",
-    title: "Recoveries & Liability Management",
+    id: "insurance-brokerage-claims-advisory",
+    title: "Insurance Brokerage & Claims Advisory",
     description:
-      "Recovering value through effective liability investigations, recovery strategies, and structured recovery process improvement.",
-    includes: [
-      "Third-party recoveries",
-      "Liability investigations",
-      "Litigation support",
-      "Recovery process optimisation",
-      "Subrogation management",
-      "Debt recovery consulting",
+      "Supporting individuals and organisations with insurance brokerage solutions, claims advisory, recoveries support, and liability management guidance.",
+    groups: [
+      {
+        heading: "Insurance cover solutions",
+        items: [
+          "Funeral, travel, car & home insurance",
+          "Corporate & commercial insurance",
+          "Engineering, construction & heavy vehicle cover",
+          "Professional indemnity & liability insurance",
+        ],
+      },
+      {
+        heading: "Claims, recoveries, and liability support",
+        items: [
+          "Claims audits",
+          "Claims process review",
+          "Claims governance",
+          "Fraud management support",
+          "Salvage optimisation",
+          "Claims outsourcing support",
+          "Third-party recoveries support",
+          "Liability investigations support",
+          "Litigation support coordination",
+          "Recovery process optimisation",
+          "Subrogation management",
+          "Debt recovery consulting",
+        ],
+      },
     ],
   },
   {
@@ -84,21 +115,6 @@ export const detailedServices = [
       "Performance management",
       "Cost reduction initiatives",
       "Business process re-engineering",
-    ],
-  },
-  {
-    id: "contact-centre-bpo",
-    title: "Contact Centre & BPO Solutions",
-    description:
-      "Building and supporting high-performing customer service, sales, and operational support environments.",
-    includes: [
-      "Contact centre setup",
-      "Outsourced customer service",
-      "Lead generation teams",
-      "Appointment setting",
-      "Workforce planning",
-      "Quality assurance frameworks",
-      "Training and coaching",
     ],
   },
   {
@@ -118,24 +134,24 @@ export const detailedServices = [
 
 export const howWeDeliverSteps = [
   {
-    title: "Assess current operations",
+    title: "Understand operational and insurance service needs",
     description:
-      "We review your processes, performance data, and operating model to establish a clear baseline.",
+      "We take time to understand your BPO, insurance, claims, and operational priorities so solutions are grounded in real business requirements.",
   },
   {
-    title: "Identify leakage, risk, and performance gaps",
+    title: "Identify risks, gaps, and performance opportunities",
     description:
-      "We pinpoint inefficiencies, compliance risks, and areas where value is being lost or under-recovered.",
+      "We pinpoint inefficiencies, service gaps, and areas where performance, control, or recovered value can be improved.",
   },
   {
-    title: "Design practical solutions",
+    title: "Design practical service and advisory solutions",
     description:
-      "We develop fit-for-purpose strategies and improvement plans aligned to your business priorities.",
+      "We develop fit-for-purpose BPO, insurance brokerage, and operational advisory approaches aligned to your priorities.",
   },
   {
-    title: "Implement fit-for-purpose improvements",
+    title: "Support implementation and service delivery",
     description:
-      "We support execution with structured delivery, clear accountability, and hands-on advisory.",
+      "We support structured execution with clear accountability, practical delivery, and hands-on advisory where needed.",
   },
   {
     title: "Measure outcomes and refine performance",
@@ -145,6 +161,6 @@ export const howWeDeliverSteps = [
 ] as const;
 
 export const servicesCtaContent = {
-  heading: "Need specialist support for your operations?",
-  body: "Speak to Modise Advisory Group about advisory, recoveries, claims, procurement, or outsourcing solutions tailored to your organisation.",
+  heading: "Need BPO, insurance, or operational support?",
+  body: "Speak to Modise Advisory Group about BPO services, insurance brokerage solutions, claims advisory, recoveries support, and operational improvement tailored to your organisation.",
 } as const;

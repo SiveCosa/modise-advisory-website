@@ -17,12 +17,9 @@ export function ServicesOverviewSection() {
           subtitle={servicesOverviewContent.body}
         />
 
-        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-6">
-          {serviceOverviewCards.map((service, index) => (
-            <li
-              key={service.id}
-              className={index < 3 ? "lg:col-span-2" : "lg:col-span-3"}
-            >
+        <ul className="mt-12 grid gap-6 sm:grid-cols-2">
+          {serviceOverviewCards.map((service) => (
+            <li key={service.id}>
               <Card className="flex h-full flex-col border-t-2 border-t-rich-gold/60 hover:border-rich-gold/30">
                 <h3 className="font-heading text-xl font-semibold text-midnight-navy">
                   {service.title}
