@@ -12,8 +12,6 @@ export const contactDetails = {
   phoneHref: siteConfig.phoneHref,
   email: siteConfig.email,
   emailHref: siteConfig.emailHref,
-  directEmail: siteConfig.directEmail,
-  directEmailHref: siteConfig.directEmailHref,
   whatsapp: siteConfig.phone,
   whatsappHref: siteConfig.whatsappHref,
   website: siteConfig.website,
@@ -30,10 +28,7 @@ export const contactOptions = [
   },
   {
     title: "Email",
-    lines: [
-      { label: contactDetails.email, href: contactDetails.emailHref },
-      { label: `Direct: ${contactDetails.directEmail}`, href: contactDetails.directEmailHref },
-    ],
+    lines: [{ label: contactDetails.email, href: contactDetails.emailHref }],
   },
   {
     title: "WhatsApp",
@@ -57,7 +52,7 @@ export const serviceOptions = [
 
 export const formNotice = {
   message:
-    "Thank you. This form is currently being configured. Please contact us directly at info@modiseadvisory.co.za or via WhatsApp for immediate assistance.",
+    "Thank you. This form is currently being configured. Please contact us directly at thabo@modiseadvisory.co.za or via WhatsApp for immediate assistance.",
   emailHref: contactDetails.emailHref,
   email: contactDetails.email,
 } as const;

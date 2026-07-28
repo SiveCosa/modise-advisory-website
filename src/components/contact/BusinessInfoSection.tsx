@@ -60,20 +60,6 @@ export function BusinessInfoSection() {
 
               <div>
                 <dt className="text-xs font-semibold uppercase tracking-wider text-rich-gold">
-                  Direct
-                </dt>
-                <dd className="mt-1">
-                  <a
-                    href={contactDetails.directEmailHref}
-                    className="text-base text-midnight-navy transition-colors hover:text-rich-gold"
-                  >
-                    {contactDetails.directEmail}
-                  </a>
-                </dd>
-              </div>
-
-              <div>
-                <dt className="text-xs font-semibold uppercase tracking-wider text-rich-gold">
                   Phone
                 </dt>
                 <dd className="mt-1">

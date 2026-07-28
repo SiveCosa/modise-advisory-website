@@ -29,7 +29,7 @@ export const siteMetadata = {
   contact: {
     title: "Contact Modise Advisory Group",
     description:
-      "Contact Modise Advisory Group for advisory, recoveries, operational excellence, and outsourcing support. Phone: +27 84 999 7309. Email: info@modiseadvisory.co.za.",
+      "Contact Modise Advisory Group for advisory, recoveries, operational excellence, and outsourcing support. Phone: +27 84 999 7309. Email: thabo@modiseadvisory.co.za.",
   },
 } as const;
 
