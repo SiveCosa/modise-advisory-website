@@ -15,33 +15,27 @@ export const expertiseAreas = [
 
 export const serviceCards = [
   {
-    title: "Insurance & Claims Advisory",
+    title: "Contact Centre & BPO Solutions",
     description:
-      "Strategic guidance to optimise claims operations, reduce leakage, and strengthen insurer performance across the value chain.",
-    href: "/services#insurance-brokerage-claims-advisory",
+      "Building and supporting scalable customer service, sales, claims administration, and back-office operations.",
+    href: "/services#contact-centre-bpo-solutions",
   },
   {
-    title: "Recoveries & Liability Management",
+    title: "Insurance Brokerage & Claims Advisory",
     description:
-      "End-to-end recoveries strategies and liability management solutions designed to maximise returns and improve outcomes.",
+      "Insurance brokerage solutions alongside claims advisory, recoveries support, and liability management guidance for individuals and organisations.",
     href: "/services#insurance-brokerage-claims-advisory",
   },
   {
     title: "Operational Excellence",
     description:
-      "Practical frameworks and hands-on support to improve efficiency, profitability, and service delivery across your operations.",
+      "Practical frameworks for process improvement, KPI design, and performance improvement across your operations.",
     href: "/services#operational-excellence",
-  },
-  {
-    title: "Contact Centre & BPO Solutions",
-    description:
-      "Scalable contact centre and business process outsourcing solutions built for quality, consistency, and long-term performance.",
-    href: "/services#contact-centre-bpo-solutions",
   },
   {
     title: "Procurement & Vendor Management",
     description:
-      "Structured procurement and vendor management support to optimise spend, strengthen supplier relationships, and drive savings.",
+      "Strategic support for tender management, supplier governance, SLA development, and vendor performance.",
     href: "/services#procurement-vendor-management",
   },
 ] as const;

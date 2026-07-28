@@ -17,12 +17,9 @@ export function ServicesPreviewSection() {
           subtitle="Comprehensive advisory and outsourcing solutions designed to deliver measurable improvements across your operations."
         />
 
-        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-6">
-          {serviceCards.map((service, index) => (
-            <li
-              key={service.title}
-              className={index < 3 ? "lg:col-span-2" : "lg:col-span-3"}
-            >
+        <ul className="mt-12 grid gap-6 sm:grid-cols-2">
+          {serviceCards.map((service) => (
+            <li key={service.title}>
               <Card className="flex h-full flex-col hover:border-rich-gold/30">
                 <h3 className="font-heading text-xl font-semibold text-midnight-navy">
                   {service.title}
