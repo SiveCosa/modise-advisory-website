@@ -28,7 +28,7 @@ export function ServicesOverviewSection() {
                   {service.description}
                 </p>
                 <LearnMoreLink
-                  href={`#${service.id}`}
+                  href={service.href}
                   label="View service details"
                   className="mt-6"
                 />

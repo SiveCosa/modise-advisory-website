@@ -16,24 +16,28 @@ export const serviceOverviewCards = [
     title: "Contact Centre & BPO Solutions",
     description:
       "Building and supporting scalable customer service, sales, claims administration, and back-office operations.",
+    href: "/services#contact-centre-bpo-solutions",
   },
   {
     id: "insurance-brokerage-claims-advisory",
     title: "Insurance Brokerage & Claims Advisory",
     description:
       "Insurance brokerage solutions alongside claims advisory, recoveries support, and liability management guidance for individuals and organisations.",
+    href: "/services#insurance-brokerage-claims-advisory",
   },
   {
     id: "operational-excellence",
     title: "Operational Excellence",
     description:
       "Practical frameworks and hands-on support to improve efficiency, reduce costs, and embed sustainable performance improvement across your operations.",
+    href: "/services#operational-excellence",
   },
   {
     id: "procurement-vendor-management",
     title: "Procurement & Vendor Management",
     description:
       "Strategic procurement and vendor management support to optimise spend, strengthen supplier governance, and drive measurable value from third-party relationships.",
+    href: "/services#procurement-vendor-management",
   },
 ] as const;
 
