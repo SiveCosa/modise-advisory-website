@@ -50,13 +50,6 @@ export const serviceOptions = [
   "General Enquiry",
 ] as const;
 
-export const formNotice = {
-  message:
-    "Thank you. This form is currently being configured. Please contact us directly at thabo@modiseadvisory.co.za or via WhatsApp for immediate assistance.",
-  emailHref: contactDetails.emailHref,
-  email: contactDetails.email,
-} as const;
-
 export const consultationCtaContent = {
   heading: "Prefer to speak directly?",
   body: "For urgent or direct enquiries, contact Modise Advisory Group by phone or WhatsApp.",
