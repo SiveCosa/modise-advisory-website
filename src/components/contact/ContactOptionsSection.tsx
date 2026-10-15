@@ -17,7 +17,7 @@ export function ContactOptionsSection() {
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {contactOptions.map((option) => (
             <li key={option.title}>
-              <Card className="h-full border-t-2 border-t-rich-gold/60 hover:border-rich-gold/30">
+              <Card interactive className="h-full border-t-2 border-t-rich-gold/60">
                 <h3 className="font-heading text-lg font-semibold text-midnight-navy">
                   {option.title}
                 </h3>
@@ -30,7 +30,7 @@ export function ContactOptionsSection() {
                         rel={
                           line.href.startsWith("http") ? "noopener noreferrer" : undefined
                         }
-                        className="text-sm leading-relaxed text-slate-grey transition-colors hover:text-rich-gold sm:text-base"
+                        className="text-sm leading-relaxed text-slate-grey transition-colors hover:text-rich-gold-ink sm:text-base"
                       >
                         {line.label}
                       </a>

@@ -22,7 +22,7 @@ export function WhyPartnerSection() {
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {partnerBenefits.map((benefit) => (
             <li key={benefit.title}>
-              <Card className="h-full border-midnight-navy-light/20 bg-pure-white/5 hover:border-rich-gold/30">
+              <Card tone="dark" className="h-full">
                 <div className="h-0.5 w-10 bg-rich-gold" aria-hidden="true" />
                 <h3 className="mt-4 font-heading text-lg font-semibold text-pure-white sm:text-xl">
                   {benefit.title}

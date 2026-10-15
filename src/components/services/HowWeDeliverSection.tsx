@@ -22,7 +22,7 @@ export function HowWeDeliverSection() {
         <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5">
           {howWeDeliverSteps.map((step, index) => (
             <li key={step.title}>
-              <Card className="h-full border-midnight-navy-light/20 bg-pure-white/5 hover:border-rich-gold/30">
+              <Card tone="dark" className="h-full">
                 <span
                   className="flex h-10 w-10 items-center justify-center rounded-sm bg-rich-gold font-heading text-lg font-semibold text-midnight-navy"
                   aria-hidden="true"

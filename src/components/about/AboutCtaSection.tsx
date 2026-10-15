@@ -34,7 +34,6 @@ export function AboutCtaSection() {
           </Button>
           <Button
             href="/services"
-            variant="outlineOnDark"
             size="lg"
             className="w-full focus-visible:ring-offset-midnight-navy sm:w-auto"
           >

@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { siteConfig } from "@/lib/constants";
 
@@ -84,12 +84,13 @@ export function Footer() {
           <p className="text-sm text-slate-grey-light">
             &copy; {currentYear} {siteConfig.name}. All rights reserved.
           </p>
-          <Link
+          <Button
             href="/contact"
-            className="text-sm font-medium text-rich-gold transition-colors hover:text-pure-white"
+            size="lg"
+            className="w-full focus-visible:ring-offset-midnight-navy sm:w-auto"
           >
             Get in touch
-          </Link>
+          </Button>
         </div>
       </Container>
     </footer>

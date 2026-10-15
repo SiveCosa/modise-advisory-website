@@ -1,3 +1,4 @@
+import { Card } from "@/components/ui/Card";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { outsourcingBenefits } from "@/lib/home-content";
@@ -19,17 +20,16 @@ export function OutsourcingSection() {
 
           <ul className="grid gap-4 sm:grid-cols-2">
             {outsourcingBenefits.map((benefit) => (
-              <li
-                key={benefit}
-                className="flex items-start gap-3 rounded-sm border border-pure-white/10 bg-pure-white/5 px-5 py-4"
-              >
-                <span
-                  className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-rich-gold"
-                  aria-hidden="true"
-                />
-                <span className="text-sm leading-relaxed text-pure-white sm:text-base">
-                  {benefit}
-                </span>
+              <li key={benefit}>
+                <Card tone="dark" size="compact" className="flex h-full items-start gap-3">
+                  <span
+                    className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-rich-gold"
+                    aria-hidden="true"
+                  />
+                  <span className="text-sm leading-relaxed text-pure-white sm:text-base">
+                    {benefit}
+                  </span>
+                </Card>
               </li>
             ))}
           </ul>

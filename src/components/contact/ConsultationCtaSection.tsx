@@ -21,7 +21,6 @@ export function ConsultationCtaSection() {
           </Button>
           <Button
             href={contactDetails.whatsappHref}
-            variant="secondary"
             size="lg"
             className="w-full sm:w-auto"
           >

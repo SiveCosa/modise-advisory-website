@@ -20,7 +20,7 @@ export function ApproachSection() {
         <ol className="mt-12 space-y-4">
           {approachSteps.map((step, index) => (
             <li key={step.title}>
-              <Card className="border-midnight-navy-light/20 bg-pure-white/5 hover:border-rich-gold/30">
+              <Card tone="dark">
                 <div className="flex gap-5 sm:gap-6">
                   <span
                     className="flex h-10 w-10 shrink-0 items-center justify-center rounded-sm bg-rich-gold font-heading text-lg font-semibold text-midnight-navy sm:h-12 sm:w-12 sm:text-xl"

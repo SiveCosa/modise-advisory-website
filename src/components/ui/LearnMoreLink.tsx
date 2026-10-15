@@ -14,7 +14,7 @@ export function LearnMoreLink({
   return (
     <Link
       href={href}
-      className={`group inline-flex items-center gap-1.5 text-sm font-medium text-rich-gold transition-colors hover:text-rich-gold-dark ${className}`}
+      className={`group inline-flex items-center gap-1.5 text-sm font-medium text-rich-gold-ink transition-colors hover:text-rich-gold-ink-dark ${className}`}
     >
       {label}
       <span

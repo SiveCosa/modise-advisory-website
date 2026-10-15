@@ -18,7 +18,7 @@ export function ValuesSection() {
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {values.map((value) => (
             <li key={value.title}>
-              <Card className="h-full hover:border-rich-gold/30">
+              <Card className="h-full">
                 <h3 className="font-heading text-xl font-semibold text-midnight-navy">
                   {value.title}
                 </h3>

@@ -140,7 +140,7 @@ export function ContactFormSection() {
 
   return (
     <section
-      className="bg-midnight-navy/[0.03] py-16 sm:py-24"
+      className="bg-midnight-navy py-16 sm:py-24"
       aria-labelledby="contact-form-heading"
     >
       <Container as="div">
@@ -150,6 +150,7 @@ export function ContactFormSection() {
             title="Send an Enquiry"
             subtitle="Complete the form below and we will get back to you shortly."
             align="center"
+            theme="light"
             className="mx-auto"
           />
 
@@ -174,7 +175,7 @@ export function ContactFormSection() {
               <div className="grid gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="contact-name" className={formLabelClass}>
-                    Name <span className="text-rich-gold">*</span>
+                    Name <span className="text-rich-gold-ink">*</span>
                   </label>
                   <input
                     id="contact-name"
@@ -190,7 +191,7 @@ export function ContactFormSection() {
                     disabled={isSending}
                   />
                   {errors.name ? (
-                    <p id="contact-name-error" className="mt-1.5 text-sm text-rich-gold-dark">
+                    <p id="contact-name-error" className="mt-1.5 text-sm text-rich-gold-ink">
                       {errors.name}
                     </p>
                   ) : null}
@@ -216,7 +217,7 @@ export function ContactFormSection() {
               <div className="grid gap-6 sm:grid-cols-2">
                 <div>
                   <label htmlFor="contact-email" className={formLabelClass}>
-                    Email <span className="text-rich-gold">*</span>
+                    Email <span className="text-rich-gold-ink">*</span>
                   </label>
                   <input
                     id="contact-email"
@@ -232,7 +233,7 @@ export function ContactFormSection() {
                     disabled={isSending}
                   />
                   {errors.email ? (
-                    <p id="contact-email-error" className="mt-1.5 text-sm text-rich-gold-dark">
+                    <p id="contact-email-error" className="mt-1.5 text-sm text-rich-gold-ink">
                       {errors.email}
                     </p>
                   ) : null}
@@ -257,7 +258,7 @@ export function ContactFormSection() {
 
               <div>
                 <label htmlFor="contact-service" className={formLabelClass}>
-                  Service Required <span className="text-rich-gold">*</span>
+                  Service Required <span className="text-rich-gold-ink">*</span>
                 </label>
                 <select
                   id="contact-service"
@@ -278,7 +279,7 @@ export function ContactFormSection() {
                   ))}
                 </select>
                 {errors.service ? (
-                  <p id="contact-service-error" className="mt-1.5 text-sm text-rich-gold-dark">
+                  <p id="contact-service-error" className="mt-1.5 text-sm text-rich-gold-ink">
                     {errors.service}
                   </p>
                 ) : null}
@@ -286,7 +287,7 @@ export function ContactFormSection() {
 
               <div>
                 <label htmlFor="contact-message" className={formLabelClass}>
-                  Message <span className="text-rich-gold">*</span>
+                  Message <span className="text-rich-gold-ink">*</span>
                 </label>
                 <textarea
                   id="contact-message"
@@ -301,7 +302,7 @@ export function ContactFormSection() {
                   disabled={isSending}
                 />
                 {errors.message ? (
-                  <p id="contact-message-error" className="mt-1.5 text-sm text-rich-gold-dark">
+                  <p id="contact-message-error" className="mt-1.5 text-sm text-rich-gold-ink">
                     {errors.message}
                   </p>
                 ) : null}

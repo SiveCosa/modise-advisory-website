@@ -16,7 +16,7 @@ export function OperatingModelSection() {
         <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5 lg:gap-5">
           {operatingModelSteps.map((step, index) => (
             <li key={step.title}>
-              <Card className="h-full hover:border-rich-gold/30">
+              <Card className="h-full">
                 <span
                   className="flex h-10 w-10 items-center justify-center rounded-sm bg-midnight-navy font-heading text-lg font-semibold text-pure-white"
                   aria-hidden="true"

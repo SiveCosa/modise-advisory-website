@@ -24,21 +24,13 @@ export function OutsourcingCtaSection() {
           className="mx-auto"
         />
 
-        <div className="mt-10 flex flex-col items-stretch justify-center gap-4 sm:flex-row sm:items-center">
+        <div className="mt-10 flex justify-center">
           <Button
             href="/contact"
             size="lg"
             className="w-full focus-visible:ring-offset-midnight-navy sm:w-auto"
           >
             Book a Consultation
-          </Button>
-          <Button
-            href="/contact"
-            variant="outlineOnDark"
-            size="lg"
-            className="w-full focus-visible:ring-offset-midnight-navy sm:w-auto"
-          >
-            Contact Us
           </Button>
         </div>
       </Container>

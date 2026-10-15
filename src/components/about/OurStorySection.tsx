@@ -20,7 +20,7 @@ export function OurStorySection() {
             </div>
           </div>
 
-          <Card className="border-l-4 border-l-rich-gold bg-midnight-navy/[0.02] lg:mt-12">
+          <Card className="border-l-4 border-l-rich-gold lg:mt-12">
             <h3 className="font-heading text-xl font-semibold text-midnight-navy">
               Experience at a Glance
             </h3>

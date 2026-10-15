@@ -18,7 +18,7 @@ export function ClientResultsSection() {
         <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {clientResults.map((result) => (
             <li key={result}>
-              <Card className="h-full border-l-4 border-l-rich-gold hover:border-rich-gold/30">
+              <Card className="h-full border-l-4 border-l-rich-gold">
                 <p className="text-base font-medium leading-snug text-midnight-navy">
                   {result}
                 </p>

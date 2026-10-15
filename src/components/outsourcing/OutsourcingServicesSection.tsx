@@ -6,7 +6,7 @@ import { outsourcingServices } from "@/lib/outsourcing-content";
 export function OutsourcingServicesSection() {
   return (
     <section
-      className="bg-midnight-navy/[0.03] py-16 sm:py-24"
+      className="bg-midnight-navy py-16 sm:py-24"
       aria-labelledby="outsourcing-services-heading"
     >
       <Container as="div">
@@ -15,13 +15,14 @@ export function OutsourcingServicesSection() {
           title="Outsourcing Services We Support"
           subtitle="Flexible outsourcing capabilities across customer service, sales, claims, and back-office operations."
           align="center"
+          theme="light"
           className="mx-auto"
         />
 
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {outsourcingServices.map((service) => (
             <li key={service.title}>
-              <Card className="h-full border-t-2 border-t-rich-gold/60 hover:border-rich-gold/30">
+              <Card className="h-full border-t-2 border-t-rich-gold/60">
                 <div className="flex items-start gap-3">
                   <span
                     className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-sm bg-rich-gold/10"

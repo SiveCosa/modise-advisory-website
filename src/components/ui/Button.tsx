@@ -6,7 +6,7 @@ type ButtonSize = "sm" | "md" | "lg";
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    "bg-rich-gold text-midnight-navy hover:bg-rich-gold-dark border border-rich-gold",
+    "border border-rich-gold bg-rich-gold text-midnight-navy shadow-[0_8px_18px_-12px_rgba(27,46,75,0.55)] hover:border-rich-gold-dark hover:bg-rich-gold-dark hover:text-midnight-navy",
   secondary:
     "bg-midnight-navy text-pure-white hover:bg-midnight-navy-light border border-midnight-navy",
   outline:
@@ -54,7 +54,14 @@ export function Button(props: ButtonProps) {
   const classes = `${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`;
 
   if ("href" in props && props.href) {
-    const { href, ...linkProps } = props;
+    const {
+      href,
+      variant: _variant,
+      size: _size,
+      className: _className,
+      children: _children,
+      ...linkProps
+    } = props;
     const isExternal = href.startsWith("http") || href.startsWith("mailto:") || href.startsWith("tel:");
 
     if (isExternal) {

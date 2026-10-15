@@ -16,7 +16,7 @@ export function SectorChallengesSection() {
         <ul className="mt-12 grid gap-4 sm:grid-cols-2">
           {sectorChallenges.map((challenge) => (
             <li key={challenge}>
-              <Card className="hover:border-rich-gold/30">
+              <Card>
                 <div className="flex items-start gap-4">
                   <span
                     className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-sm border border-rich-gold/30 bg-rich-gold/10"

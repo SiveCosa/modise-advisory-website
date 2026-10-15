@@ -7,7 +7,10 @@
   --color-slate-grey: #64748b;
 
   --color-midnight-navy-light: #2a4066;
+  --color-midnight-navy-soft: #344c6c;
   --color-rich-gold-dark: #b0923f;
+  --color-rich-gold-ink: #8a6b28;
+  --color-rich-gold-ink-dark: #70581f;
   --color-slate-grey-light: #94a3b8;
 
   --navbar-height: 4.25rem;
@@ -37,7 +40,10 @@ section [id] {
   --color-pure-white: #ffffff;
   --color-slate-grey: #64748b;
   --color-midnight-navy-light: #2a4066;
+  --color-midnight-navy-soft: #344c6c;
   --color-rich-gold-dark: #b0923f;
+  --color-rich-gold-ink: #8a6b28;
+  --color-rich-gold-ink-dark: #70581f;
   --color-slate-grey-light: #94a3b8;
 
   --font-sans: var(--font-inter), system-ui, sans-serif;

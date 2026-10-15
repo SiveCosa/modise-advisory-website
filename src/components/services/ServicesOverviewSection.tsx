@@ -20,7 +20,7 @@ export function ServicesOverviewSection() {
         <ul className="mt-12 grid gap-6 sm:grid-cols-2">
           {serviceOverviewCards.map((service) => (
             <li key={service.id}>
-              <Card className="flex h-full flex-col border-t-2 border-t-rich-gold/60 hover:border-rich-gold/30">
+              <Card interactive className="flex h-full flex-col border-t-2 border-t-rich-gold/60">
                 <h3 className="font-heading text-xl font-semibold text-midnight-navy">
                   {service.title}
                 </h3>

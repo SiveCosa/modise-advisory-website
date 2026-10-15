@@ -22,7 +22,7 @@ export function IndustriesCtaSection() {
           <Button href="/contact" size="lg" className="w-full sm:w-auto">
             Contact Us
           </Button>
-          <Button href="/services" variant="secondary" size="lg" className="w-full sm:w-auto">
+          <Button href="/services" size="lg" className="w-full sm:w-auto">
             Explore Services
           </Button>
         </div>

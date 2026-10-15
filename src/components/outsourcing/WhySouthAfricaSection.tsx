@@ -21,7 +21,7 @@ export function WhySouthAfricaSection() {
         <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {southAfricaBenefits.map((benefit) => (
             <li key={benefit}>
-              <Card className="h-full hover:border-rich-gold/30">
+              <Card className="h-full">
                 <div className="flex items-start gap-3">
                   <span
                     className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-rich-gold"

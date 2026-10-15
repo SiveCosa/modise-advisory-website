@@ -7,7 +7,7 @@ import { siteConfig } from "@/lib/constants";
 export function BusinessInfoSection() {
   return (
     <section
-      className="bg-midnight-navy/[0.03] py-16 sm:py-24"
+      className="bg-midnight-navy-soft py-16 sm:py-24"
       aria-labelledby="business-info-heading"
     >
       <Container as="div">
@@ -16,16 +16,17 @@ export function BusinessInfoSection() {
             id="business-info-heading"
             title={businessInfoContent.heading}
             align="center"
+            theme="light"
             className="mx-auto"
           />
 
-          <Card className="mt-12">
+          <Card tone="dark" className="mt-12">
             <dl className="space-y-5">
               <div>
                 <dt className="text-xs font-semibold uppercase tracking-wider text-rich-gold">
                   Company
                 </dt>
-                <dd className="mt-1 text-base text-midnight-navy">{siteConfig.name}</dd>
+                <dd className="mt-1 text-base text-pure-white">{siteConfig.name}</dd>
               </div>
 
               <div>
@@ -37,7 +38,7 @@ export function BusinessInfoSection() {
                     href={contactDetails.websiteHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-base text-midnight-navy transition-colors hover:text-rich-gold"
+                    className="text-base text-pure-white transition-colors hover:text-rich-gold"
                   >
                     {contactDetails.website}
                   </a>
@@ -51,7 +52,7 @@ export function BusinessInfoSection() {
                 <dd className="mt-1">
                   <a
                     href={contactDetails.emailHref}
-                    className="text-base text-midnight-navy transition-colors hover:text-rich-gold"
+                    className="text-base text-pure-white transition-colors hover:text-rich-gold"
                   >
                     {contactDetails.email}
                   </a>
@@ -65,7 +66,7 @@ export function BusinessInfoSection() {
                 <dd className="mt-1">
                   <a
                     href={contactDetails.phoneHref}
-                    className="text-base text-midnight-navy transition-colors hover:text-rich-gold"
+                    className="text-base text-pure-white transition-colors hover:text-rich-gold"
                   >
                     {contactDetails.phone}
                   </a>
@@ -76,11 +77,11 @@ export function BusinessInfoSection() {
                 <dt className="text-xs font-semibold uppercase tracking-wider text-rich-gold">
                   LinkedIn
                 </dt>
-                <dd className="mt-1 text-base text-slate-grey">{siteConfig.linkedIn}</dd>
+                <dd className="mt-1 text-base text-pure-white">{siteConfig.linkedIn}</dd>
               </div>
             </dl>
 
-            <p className="mt-6 border-t border-midnight-navy/10 pt-6 text-sm leading-relaxed text-slate-grey">
+            <p className="mt-6 border-t border-pure-white/15 pt-6 text-sm leading-relaxed text-pure-white/80">
               {businessInfoContent.linkedInNote}
             </p>
           </Card>

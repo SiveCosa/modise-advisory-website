@@ -27,14 +27,22 @@ function ServiceIncludeList({ items }: { items: readonly string[] }) {
   );
 }
 
+const navyServiceIds = new Set([
+  "contact-centre-bpo-solutions",
+  "operational-excellence",
+]);
+
 export function ServiceDetailSection({ service, index }: ServiceDetailSectionProps) {
+  const isNavy = navyServiceIds.has(service.id);
   const isAlternate = index % 2 === 1;
   const hasGroups = Boolean(service.groups?.length);
 
   return (
     <section
       id={service.id}
-      className={`py-16 sm:py-24 ${isAlternate ? "bg-midnight-navy/[0.03]" : "bg-pure-white"}`}
+      className={`py-16 sm:py-24 ${
+        isNavy ? "bg-midnight-navy" : isAlternate ? "bg-midnight-navy/[0.03]" : "bg-pure-white"
+      }`}
       aria-labelledby={`${service.id}-heading`}
     >
       <Container as="div">
@@ -43,11 +51,17 @@ export function ServiceDetailSection({ service, index }: ServiceDetailSectionPro
             <div className="h-0.5 w-12 bg-rich-gold" aria-hidden="true" />
             <h2
               id={`${service.id}-heading`}
-              className="mt-3 font-heading text-3xl font-semibold tracking-tight text-midnight-navy sm:text-4xl"
+              className={`mt-3 font-heading text-3xl font-semibold tracking-tight sm:text-4xl ${
+                isNavy ? "text-pure-white" : "text-midnight-navy"
+              }`}
             >
               {service.title}
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-slate-grey sm:text-lg">
+            <p
+              className={`mt-5 text-base leading-relaxed sm:text-lg ${
+                isNavy ? "text-slate-grey-light" : "text-slate-grey"
+              }`}
+            >
               {service.description}
             </p>
           </div>
@@ -56,7 +70,7 @@ export function ServiceDetailSection({ service, index }: ServiceDetailSectionPro
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
               {service.groups?.map((group) => (
                 <Card key={group.heading} className="border-l-4 border-l-rich-gold">
-                  <h3 className="text-sm font-semibold uppercase tracking-wider text-rich-gold">
+                  <h3 className="text-sm font-semibold uppercase tracking-wider text-rich-gold-ink">
                     {group.heading}
                   </h3>
                   <ul className="mt-5 grid gap-3">
@@ -77,7 +91,7 @@ export function ServiceDetailSection({ service, index }: ServiceDetailSectionPro
             </div>
           ) : (
             <Card className="border-l-4 border-l-rich-gold">
-              <h3 className="text-sm font-semibold uppercase tracking-wider text-rich-gold">
+              <h3 className="text-sm font-semibold uppercase tracking-wider text-rich-gold-ink">
                 Services Include
               </h3>
               <ServiceIncludeList items={service.includes ?? []} />

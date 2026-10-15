@@ -34,7 +34,6 @@ export function CtaSection() {
           </Button>
           <Button
             href={siteConfig.whatsappHref}
-            variant="outlineOnDark"
             size="lg"
             className="w-full focus-visible:ring-offset-midnight-navy sm:w-auto"
           >

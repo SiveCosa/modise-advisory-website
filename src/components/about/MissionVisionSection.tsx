@@ -5,7 +5,7 @@ import { missionVision } from "@/lib/about-content";
 export function MissionVisionSection() {
   return (
     <section
-      className="bg-midnight-navy/[0.03] py-16 sm:py-24"
+      className="bg-midnight-navy py-16 sm:py-24"
       aria-labelledby="mission-vision-heading"
     >
       <Container as="div">
@@ -16,7 +16,7 @@ export function MissionVisionSection() {
           {Object.values(missionVision).map((item) => (
             <Card
               key={item.title}
-              className="border-t-2 border-t-rich-gold hover:border-rich-gold/30"
+              className="border-t-2 border-t-rich-gold"
             >
               <div className="flex items-start gap-4">
                 <span

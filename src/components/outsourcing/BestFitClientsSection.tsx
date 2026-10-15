@@ -21,7 +21,7 @@ export function BestFitClientsSection() {
         <ul className="mx-auto mt-12 grid max-w-3xl gap-4">
           {bestFitClients.map((client) => (
             <li key={client}>
-              <Card className="hover:border-rich-gold/30">
+              <Card>
                 <div className="flex items-start gap-4">
                   <span
                     className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-rich-gold"
